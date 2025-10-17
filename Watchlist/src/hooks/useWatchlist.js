@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+  
+
 
 const useWatchlist = () => {
   const [watchlist, setWatchlist] = useState([]);
-
+  
+  
   //  Cargar desde LocalStorage al iniciar
   useEffect(() => {
     const savedWatchlist = JSON.parse(localStorage.getItem("watchlist")) || [];

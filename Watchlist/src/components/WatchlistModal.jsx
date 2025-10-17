@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const WatchlistModal = ({ watchlist, onRemove, onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-end z-50 pointer-events-none">
-      {/* Solo el modal es clickable */}
+      {/* Solo el modal es abierto*/}
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
